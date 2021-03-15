@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="splash-bg">
+    <div class="cover" padding>
+      <ion-icon name="arrow-back-outline" class="go-back" *ngIf="otpSentStatus" (click)="reset()"></ion-icon>
+      <div class='login'>
+        <div class="logo_container">
+          <div class="logo"><img src="assets/icon/newlogo.png" alt="Installer"></div>
+          <div class="logo_name">MEDS</div>
+        </div>
+        <form #loginForm="ngForm" (submit)="loginForm.valid && (otpSentStatus ? login() : sendOTP()) ">
+          <ion-row class="track-input-container" *ngIf="!otpSentStatus">
+            <ion-col size="auto" class="track-input-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </ion-col>
+            <ion-col>
+              <input type="tel" name="mobile" placeholder="Mobile No." minlength="10" maxlength="10" class="track-input"
+                [(ngModel)]="user.mobileNo" required>
+            </ion-col>
+          </ion-row>
+          <ion-row class="track-input-container" *ngIf="otpSentStatus">
+            <ion-col size="auto" class="track-input-icon">
+              <i class="fas fa-key"></i>
+            </ion-col>
+            <ion-col>
+              <input type="tel" name="password" minlength="4" maxlength="4"  placeholder="OTP"
+                [(ngModel)]="user.password"  class="track-input" required>
+            </ion-col>
+          </ion-row>
+          <p class="otp" *ngIf="otpCount && otpSentStatus ">Resend OTP in {{otpCount}} seconds..</p>
+          <p class="ion-text-right" *ngIf="!otpCount && otpSentStatus" (click)="sendOTP()">Resend OTP</p>
+          <div class="login-buttons">
+            <p class="ion-text-center" style="margin-top: 20px;">
+              <button ion-button outline block class="track-login " type="submit ">Login</button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -3,13 +3,21 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    redirectTo: 'otp-sign-up',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'otp-sign-up',
+    loadChildren: () => import('./basic-components/otp-sign-up/otp-sign-up.module').then( m => m.OtpSignUpPageModule)
+  },
+  {
+    path: 'login-page',
+    loadChildren: () => import('./basic-components/login-page/login-page.module').then( m => m.LoginPagePageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
 ];
 

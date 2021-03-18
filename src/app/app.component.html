@@ -1,3 +1,30 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" [swipeGesture]="false" menuId="first"  class="jrx-menu">
+    <div class="menu_container">
+      <div class="user_details_container">
+        <div class="img_container" >
+          <div class="image"><img src="../assets/icon/logo.png" alt="logo" >
+          </div>
+        </div>
+        <div class="name_container">container</div>
+      </div>
+      <div class="menu" >
+        <div class="menu_item" *ngFor="let menu of menus" (click)="menuAction(menu)" >
+          <ng-container >
+            <div class="icon">
+              <div class="img"><i 
+                  [class]="'fas fa-' + menu.icon" alt=""> </i></div>
+            </div>
+            <div class="name">
+              <div >{{menu.name}}</div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+      <div class="app_version">V1.4.5</div>
+    </div>
+  </ion-menu>
+
+
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>

@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    width: 100vh;
+}
+.cover{
+    background-color: #EFB453;
+    height: 100vh;
+    width: 100vh;
+}
+.logo{
+    width: 40vh;
+}
+.track-input{
+        height: 5vh;
+        width: 40%;
+        border-radius: 5px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+}

@@ -4,8 +4,7 @@
       <ion-icon name="arrow-back-outline" class="go-back" *ngIf="otpSentStatus" (click)="reset()"></ion-icon>
       <div class='login'>
         <div class="logo_container">
-          <div class="logo"><img src="assets/icon/newlogo.png" alt="Installer"></div>
-          <div class="logo_name">MEDS</div>
+          <div class="logo"><img src="assets/icon/logo.png" alt="logo"></div>
         </div>
         <form #loginForm="ngForm" (submit)="loginForm.valid && (otpSentStatus ? login() : sendOTP()) ">
           <ion-row class="track-input-container" *ngIf="!otpSentStatus">

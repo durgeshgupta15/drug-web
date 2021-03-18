@@ -1,0 +1,330 @@
+@import '../assets/scss/variable.scss';
+.menu-header {
+  text-align: center;
+  padding: 15px;
+  margin: 0px 20px;
+  img {
+    width: 280px;
+    height: 140px;
+    border-radius: 6px;
+  }
+  div {
+    border-bottom: 1px solid #EFB453;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: osb;
+    color: #000;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+  }
+}
+
+.menu-list {
+  padding: 0px 16px;
+  margin: 0;
+  overflow: auto;
+  height: calc(100vh - 205px);
+  ion-col {
+    margin-bottom: 20px;
+    ion-icon {
+      vertical-align: middle;
+      font-size: 25px;
+    }
+    span {
+      vertical-align: middle;
+      margin-left: 20px;
+      font-family: osm;
+      font-size: 16px;
+    }
+  }
+}
+.veh-options {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  .veh-container {
+    position: relative;
+    height: 100vh;
+  }
+  .option-card {
+    background: #fff;
+    padding: 16px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    min-height: 300px;
+    .vehicle {
+      background: #f2f2f2;
+      text-align: center;
+      position: relative;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-family: Bebasneue Regular;
+      font-size: 25px;
+      position: relative;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      ion-icon {
+        display: inline-block;
+        vertical-align: middle;
+        right: 18px;
+        position: absolute;
+        top: 8px;
+        color: #EFB453;
+        font-weight: normal;
+      }
+    }
+    .border-line {
+      width: 75%;
+      margin: auto;
+      height: 1px;
+      background: #EFB453;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .action-name {
+      font-family: Osm;
+      font-size: 12px;
+    }
+    .action-img img {
+      width: 40px;
+    }
+  }
+}
+.filter-card {
+  background: #fff;
+  padding: 16px;
+  position: absolute;
+  bottom: 30px;
+  width: 250px;
+  border-radius: 20px 0px 0px 20px;
+  min-height: 300px;
+  right: 0;
+  .filter-icon {
+    display: inline-block;
+    background: #f2f2f2;
+    padding: 10px;
+    height: 100%;
+    img {
+      width: 24px;
+      vertical-align: -webkit-baseline-middle;
+    }
+  }
+  .filters:first-child .filter-icon {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .filters:last-child .filter-icon {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .filter-name {
+    span {
+      vertical-align: middle;
+      line-height: 40px;
+      font-size: 14px;
+      font-family: Osl;
+    }
+  }
+}
+ion-menu {
+  --background: transparent;
+  --width: 30%;
+}
+
+
+.menu_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 60px;
+  .user_details_container {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    border-top-right-radius: 60px;
+    .img_container {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image {
+        height: 10vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background: $lightshadegray;
+        // border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .name_container {
+      font-size: 2vh;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+
+  .menu {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #EFB453;
+    .menu_item {
+      height: 15vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 5%;
+      font-size: 3vh;
+      align-items: center;
+      justify-content: center;
+      .name {
+        width: 80%;
+        padding: 0 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8vh;
+        color: white;
+        text-align: center;
+        .badge {
+          background: lightcoral;
+          padding: 4px 10px;
+          border-radius: 3px;
+          color:$darkgray;
+        }
+      }
+      .icon {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img {
+          color: $white;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    // .menu_item:last-child{ 
+    //   justify-content: center;
+    //   position: absolute;
+    //   bottom: 25px;
+    //       }
+    .menu_item:active .img { 
+      color:$activeblue!important;
+          }
+          .menu_item:active .name { 
+            opacity: 1;
+                }
+  }
+}
+
+
+
+:root {
+	--yellow: #feb60a;
+	--red: #ff0062;
+	--blue: #00dbf9;
+	--violet: #da00f7;
+}
+
+div._container {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  z-index: 100;
+
+}
+.sub {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 100%;
+	margin: 2vw;
+	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+	animation: bounce .6s 0.5s linear infinite;
+}
+.yellow {
+  // background-color: $white;
+  animation-delay: .1s;
+}
+
+.red {
+	// background-color: $white;
+	animation-delay: .2s;
+}
+
+.blue {
+	// background-color: $white;
+	animation-delay: .3s;
+}
+
+.violet {
+	// background-color: $white;
+	animation-delay: .4s;
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1.2);
+    // filter: blur(0px);
+    background: $lightblue;
+	}
+	25% {
+		transform: scale(1);
+    // filter: blur(3px);
+    background: $white;
+  }
+  50% {
+		transform: scale(1);
+    // filter: blur(0px);
+    background: $white;
+	}
+  
+	75% {
+		// filter: blur(3px);
+    // transform: scale(1.4);
+    background: $white;
+  }
+  100% {
+		transform: scale(1);
+    // filter: blur(0px);
+    background: $white;
+	}
+}
+.app_version {
+  position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 6vh;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 2.5vh;
+}
+
+
+

@@ -1,22 +1,95 @@
-body{
-    height: 100vh;
-    width: 100vh;
+@import '../../../assets/scss/variable.scss';
+
+body {
+  height: 100vh;
+  width: 100vh;
 }
-.cover{
-    background-color: #EFB453;
-    height: 100vh;
-    width: 100vh;
+
+.cover {
+  height: 100vh;
+  width: 100vh;
+
+  .login{
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo_container{
+    height: 40vh;
+    width: 100%;
+  }
+
+  img{
+    height: 30vh;
+    width: 30vh;
+    margin-left: 12vh;
+    margin: -top;
+    margin-top: 9vh;
+  }
 }
-.logo{
-    width: 40vh;
+
+.track-input-container {
+  height: 4vh;
+  width: 42%;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  margin: 7vh;
+
+  input {
+    border: none;
+    outline: none;
+    width: 85%;
+    background: transparent;
+    color: $font;
+    height: 98%;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+
+  .track-input-icon {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    color: #7fcaf1;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-weight: 600;
+    }
+  }
 }
-.track-input{
-        height: 5vh;
-        width: 40%;
-        border-radius: 5px;
-        background: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2vh;
+
+.login-buttons {
+  display: flex;
+  align-items: center;
+  margin: 2vh;
+  border-radius: 8%;
+  width: 20vh;
+  height: 8vh;
+  margin-left: 17vh;
+
+  p {
+    height: 100%;
+    width: 100%;
+  }
+
+  .track-login {
+    height: 100%;
+    width: 100%;
+    background: #EFB453;
+    font-size: 3vh;
+    font-family: 'Poppins-Light';
+    font-weight: bold;
+    border-radius: 8%;
+  }
+
 }

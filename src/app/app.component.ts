@@ -19,9 +19,13 @@ export class AppComponent {
 
   menuColor;
   menus: menu[] = [
-    { name: 'Dashboard', icon: 'home', route: '/vehicle-list' },
-    { name: 'Share', icon: 'share-alt', action: 'reachUs' },
+    { name: 'Home', icon: 'home', route: '/vehicle-list' },
+    { name: 'Cart', icon: 'home', route: '/vehicle-list' },
+    { name: 'My Profile', icon: 'home', route: '/vehicle-list' },
     { name: 'About Us', icon: 'download', action: 'appDownload' },
+    { name: 'Terms & Condition', icon: 'download', action: 'appDownload' },
+    { name: 'My Location', icon: 'download', action: 'appDownload' },
+    { name: 'Hr Coins', icon: 'download', action: 'appDownload' },
     { name: 'Payment', icon: 'rupee-sign', route: '/cf-payment' },
     { name: 'Logout', icon: 'sign-out-alt', action: 'logout' },
   ]

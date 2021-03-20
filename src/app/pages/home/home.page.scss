@@ -1,24 +1,26 @@
 @import '../../../assets/scss/variable.scss';
 
 .header {
-    width: 100%;
-    height: 8vh;
-    background: #EFB453;
-  }
-  .title_burger {
-    width: 100%;
-    color: $darkgray;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    .burger {
-      padding-left: 2%;
-      width: 15%;
+  width: 100%;
+  height: 8vh;
+  background: #EFB453;
+}
+
+.title_burger {
+  width: 100%;
+  color: $darkgray;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .burger {
+    padding-left: 2%;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    ion-menu-button{
+
+    ion-menu-button {
       border-radius: 50%;
       background: $white;
       color: #EFB453;
@@ -26,137 +28,165 @@
       width: 40px;
       height: 40px;
     }
-    }
-    .title {
-      width: 85%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 80%;
-      padding-left: 10px;
-      .text {
-        font-weight: 600;
-        color: $white;
-      }
-      .logo_container {
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-        height: 100%;
-        align-items: center ;
-      }
-  
-      .logo {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        img {
-          width: 80px;
-        }
-      }
-      .doc {
-        img {
-          width: 45px;
-        }
-      }
-    }
   }
-  
-  .searchbar {
-    background: #EFB453;
-    top: 8vh;
-    position: absolute;
-    margin-top: -1px;
-    width: 100%;
-    height: 12vh;
+
+  .title {
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 3% 10% 4%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    .flitersec{
-      width: 40%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding-right: 1.2vw;
+    height: 80%;
+    padding-left: 10px;
+
+    .text {
+      font-weight: 600;
+      color: $white;
     }
-    .filter {
+
+    .logo_container {
+      width: 50%;
       display: flex;
+      justify-content: space-evenly;
+      height: 100%;
       align-items: center;
-      color: $darkgray;
-      
-      font-size: 2vh;
-      margin-left: 10px;
-      span{
-        padding: 0vh 2vw 0vh 2vw;
-        // padding: 7px 7px 5px 7px;
-        border-radius: 5px;
-        color: $skyblue;
-        height: 4vh;
-        display: flex;
-        align-items: center;
-      }
-      .lines {
-        display: flex;
-        flex-direction: column;
-        height: 60%;
-        justify-content: space-evenly;
-        width: 90%;
-        align-items: center;
-        .line1 {
-          height: 3px;
-          width: 60%;
-          background: $darkgray;
-        }
-        .line2 {
-          height: 3px;
-          width: 42%;
-          background: $darkgray;
-        }
-        .line3 {
-          height: 3px;
-          width: 26%;
-          background: $darkgray;
-        }
-      }
     }
-    .input {
-      height: 4vh;
-      width: 70%;
-      border-radius: 5px;
-      background: white;
+
+    .logo {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2vh;
-      input {
-        border: none;
-        outline: none;
-        width: 85%;
-        background: transparent;
-        color: $font;
-        height: 98%;
-        &::placeholder {
-          color: $gray;
-        }
+      width: 50%;
+
+      img {
+        width: 80px;
       }
-      .icon {
-        width: 15%;
-        display: flex;
-        justify-content: center;
-        color: $skyblue;
-        height: 98%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: rotate(80deg);
-        i {
-          font-weight: 600;
-        }
+    }
+
+    .doc {
+      img {
+        width: 45px;
       }
     }
   }
+}
+
+.searchbar {
+  background: #EFB453;
+  top: 8vh;
+  position: absolute;
+  margin-top: -1px;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 3% 10% 4%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  .flitersec {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.2vw;
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    color: $darkgray;
+
+    font-size: 2vh;
+    margin-left: 10px;
+
+    span {
+      padding: 0vh 2vw 0vh 2vw;
+      // padding: 7px 7px 5px 7px;
+      border-radius: 5px;
+      color: $skyblue;
+      height: 4vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .lines {
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      justify-content: space-evenly;
+      width: 90%;
+      align-items: center;
+
+      .line1 {
+        height: 3px;
+        width: 60%;
+        background: $darkgray;
+      }
+
+      .line2 {
+        height: 3px;
+        width: 42%;
+        background: $darkgray;
+      }
+
+      .line3 {
+        height: 3px;
+        width: 26%;
+        background: $darkgray;
+      }
+    }
+  }
+
+  .input {
+    height: 4vh;
+    width: 70%;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+
+    input {
+      border: none;
+      outline: none;
+      width: 85%;
+      background: transparent;
+      color: $font;
+      height: 98%;
+
+      &::placeholder {
+        color: $gray;
+      }
+    }
+
+    .icon {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      color: $skyblue;
+      height: 98%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(80deg);
+
+      i {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.slide-bar {
+  height: 25vh;
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  position: absolute;
+  top: 21vh;
+  align-items: center;
+}
+

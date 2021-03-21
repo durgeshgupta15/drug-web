@@ -183,10 +183,30 @@
 .slide-bar {
   height: 25vh;
   width: 100%;
-  border: 2px solid red;
+  border: 1px solid red;
   display: flex;
   position: absolute;
   top: 21vh;
   align-items: center;
 }
 
+ion-slides {
+  height: 100%;
+}
+
+.seller-card-container {
+  display: flex;
+  position: absolute;
+  border: 1px solid blue;
+  height: 100%;
+  width: 100%;
+  top: 47vh;
+  flex-direction: column  ;
+
+  .seller-cards {
+    border: 1px solid black;
+    height: 24vh;
+    width: 100%;
+    margin-top: 2vh;
+  }
+}

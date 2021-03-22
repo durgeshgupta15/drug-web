@@ -49,6 +49,22 @@
       justify-content: space-evenly;
       height: 100%;
       align-items: center;
+
+      .profile{
+        border: 1px solid black;
+
+        i{
+          padding: 1vh;
+        }
+      }
+
+      .cart{
+        border: 1px solid black;
+
+        i{
+          padding: 1vh;
+        }
+      }
     }
 
     .logo {
